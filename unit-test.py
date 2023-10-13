@@ -18,9 +18,14 @@ class TestKalkulator(unittest.TestCase):
         result = hitung('4', 10, 5)
         self.assertEqual(result, 'Hasil operasi dari 10 / 5 = 2.0')
 
+    def test_bagi(self):
+        result = hitung('4', 20, 5)
+        self.assertEqual(result, 'Hasil operasi dari 20 / 5 = 2.0')
+
     def test_invalid_input(self):
         result = hitung('5', 10, 2)
         self.assertEqual(result, 'Tidak Valid')
 
 if __name__ == '__main__':
     unittest.main()
+
